@@ -20,5 +20,5 @@ let someValue: [-1 | 1, "left" | "right"];
 someValue = [1, "right"];
 
 // Aliases can be used to create more complex types, such as objects or arrays, and can be reused throughout your codebase.
-type User = "Admin" | "User" | "Guest";
-let currentUser: User = "Admin";
+type UserA = "Admin" | "User" | "Guest";
+let currentUser: UserA = "Admin";

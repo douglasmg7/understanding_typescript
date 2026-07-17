@@ -37,7 +37,7 @@ type User = {
     age: number;
     greet: (name: string) => string;
 };
-let user: User = {
+let user3: User = {
     name: "Alice",
     age: 30,
     greet: (name: string) => {
@@ -45,4 +45,4 @@ let user: User = {
         return `Hello, ${name}!`;
     },
 };
-user.greet("Bob");
+user3.greet("Bob");
