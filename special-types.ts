@@ -26,3 +26,16 @@ const inputEl4 = document.getElementById(
     "myElement",
 ) as HTMLInputElement | null;
 console.log(inputEl4?.innerHTML);
+
+// Unknown type is a type-safe counterpart of the any type. It means that we don't know the type of a value, but we want to ensure that we handle it safely.
+// In JavaScript, the syntax !!val coerces the variable val into a strict boolean value (true or false). It is often used to check if a value is truthy or falsy.
+function process(val: unknown) {
+    if (
+        typeof val === "object" &&
+        !!val &&
+        "log" in val &&
+        typeof val.log === "function"
+    ) {
+        val.log("Processing value");
+    }
+}
